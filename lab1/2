@@ -1,8 +1,0 @@
-(defun del(position elements)
-(if (not (eq elements nil))
-(if (= position 0)
-(cdr elements)
-(cons (car elements) (del (- position 1) (cdr elements)))
-)))
-
-(del 3 (list 2 5 8 11))
